@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Consultations | Kheru De Fontes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .service-detail {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .service-detail-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .service-detail-header h2 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-detail-header p {
+            color: white;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-detail-header h2:after {
+            background: white;
+            margin: 15px auto;
+        }
+        
+        .service-detail-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .service-detail-section {
+            margin-bottom: 40px;
+        }
+        
+        .service-illustration {
+            width: 100%;
+            max-width: 500px;
+            margin: 15px auto;
+            display: block;
+        }
+        
+        .consultation-animation path,
+        .consultation-animation circle,
+        .consultation-animation rect {
+            transform-origin: center;
+        }
+        
+        .service-detail-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .service-detail-section ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .service-detail-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .service-detail-cta {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .service-detail-cta h3 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        
+        .back-to-services {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .back-to-services i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kheru De Fontes</h1>
+                <p>Business Consultant & Astrologer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#astrology">Business Astrology</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-detail-header">
+        <div class="container">
+            <h2>Business Consultations</h2>
+            <p>Expert guidance to navigate your business challenges and opportunities in the American market</p>
+        </div>
+    </section>
+
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-illustration">
+                <svg class="consultation-animation" width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background elements -->
+                    <rect width="500" height="300" fill="#f9f9f9" rx="10" ry="10" />
+                    
+                    <!-- Business chart -->
+                    <g>
+                        <line x1="100" y1="220" x2="400" y2="220" stroke="#6a3093" stroke-width="2" />
+                        <line x1="100" y1="220" x2="100" y2="80" stroke="#6a3093" stroke-width="2" />
+                        
+                        <!-- Animated chart bars -->
+                        <rect x="130" y="180" width="30" height="40" fill="#a044ff" opacity="0.7">
+                            <animate attributeName="height" values="0;40" dur="1s" begin="0.1s" fill="freeze" />
+                            <animate attributeName="y" values="220;180" dur="1s" begin="0.1s" fill="freeze" />
+                        </rect>
+                        
+                        <rect x="190" y="150" width="30" height="70" fill="#a044ff" opacity="0.8">
+                            <animate attributeName="height" values="0;70" dur="1s" begin="0.3s" fill="freeze" />
+                            <animate attributeName="y" values="220;150" dur="1s" begin="0.3s" fill="freeze" />
+                        </rect>
+                        
+                        <rect x="250" y="120" width="30" height="100" fill="#a044ff" opacity="0.9">
+                            <animate attributeName="height" values="0;100" dur="1s" begin="0.5s" fill="freeze" />
+                            <animate attributeName="y" values="220;120" dur="1s" begin="0.5s" fill="freeze" />
+                        </rect>
+                        
+                        <rect x="310" y="100" width="30" height="120" fill="#a044ff">
+                            <animate attributeName="height" values="0;120" dur="1s" begin="0.7s" fill="freeze" />
+                            <animate attributeName="y" values="220;100" dur="1s" begin="0.7s" fill="freeze" />
+                        </rect>
+                        
+                        <!-- Growth line -->
+                        <path d="M130 180 L190 150 L250 120 L310 100" stroke="#e9d362" stroke-width="3" fill="none" stroke-dasharray="350" stroke-dashoffset="350">
+                            <animate attributeName="stroke-dashoffset" values="350;0" dur="1.5s" begin="0.8s" fill="freeze" />
+                        </path>
+                        
+                        <!-- Animated dots on line -->
+                        <circle cx="130" cy="180" r="5" fill="#e9d362">
+                            <animate attributeName="r" values="0;5" dur="0.3s" begin="0.8s" fill="freeze" />
+                        </circle>
+                        
+                        <circle cx="190" cy="150" r="5" fill="#e9d362">
+                            <animate attributeName="r" values="0;5" dur="0.3s" begin="1s" fill="freeze" />
+                        </circle>
+                        
+                        <circle cx="250" cy="120" r="5" fill="#e9d362">
+                            <animate attributeName="r" values="0;5" dur="0.3s" begin="1.2s" fill="freeze" />
+                        </circle>
+                        
+                        <circle cx="310" cy="100" r="5" fill="#e9d362">
+                            <animate attributeName="r" values="0;5" dur="0.3s" begin="1.4s" fill="freeze" />
+                        </circle>
+                    </g>
+                    
+                    <!-- Business person and consultant -->
+                    <g>
+                        <!-- Business person -->
+                        <circle cx="160" cy="50" r="20" fill="#6a3093">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.2s" fill="freeze" />
+                        </circle>
+                        
+                        <!-- Consultant -->
+                        <circle cx="340" cy="50" r="20" fill="#a044ff">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.4s" fill="freeze" />
+                        </circle>
+                        
+                        <!-- Connection line -->
+                        <path d="M180 50 L320 50" stroke="#e9d362" stroke-width="3" stroke-dasharray="140" stroke-dashoffset="140">
+                            <animate attributeName="stroke-dashoffset" values="140;0" dur="1s" begin="0.6s" fill="freeze" />
+                        </path>
+                        
+                        <!-- Ideas/communication symbols -->
+                        <g>
+                            <circle cx="250" cy="40" r="8" fill="#e9d362" opacity="0">
+                                <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.5s" repeatCount="indefinite" />
+                            </circle>
+                            
+                            <circle cx="250" cy="60" r="6" fill="#e9d362" opacity="0">
+                                <animate attributeName="opacity" values="0;1;0" dur="2s" begin="2s" repeatCount="indefinite" />
+                            </circle>
+                            
+                            <circle cx="230" cy="50" r="5" fill="#e9d362" opacity="0">
+                                <animate attributeName="opacity" values="0;1;0" dur="2s" begin="2.5s" repeatCount="indefinite" />
+                            </circle>
+                            
+                            <circle cx="270" cy="50" r="7" fill="#e9d362" opacity="0">
+                                <animate attributeName="opacity" values="0;1;0" dur="2s" begin="3s" repeatCount="indefinite" />
+                            </circle>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="service-detail-content">
+                <div class="service-detail-section">
+                    <h3>What Are Business Consultations?</h3>
+                    <p>Business consultations are personalized advisory sessions where I work directly with you to address specific challenges, identify opportunities, and develop strategies for your business's growth and success. Drawing on my extensive experience in the U.S. business landscape, I provide tailored advice that considers both conventional business wisdom and astrological insights for optimal timing and decision-making.</p>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>How My Business Consultation Process Works</h3>
+                    <ol>
+                        <li><strong>Initial Assessment:</strong> We begin with a comprehensive evaluation of your current business situation, including strengths, weaknesses, opportunities, and threats.</li>
+                        <li><strong>Goal Setting:</strong> Together, we establish clear, measurable objectives aligned with your vision and the current market conditions in the USA.</li>
+                        <li><strong>Strategy Development:</strong> I create customized strategies and action plans designed specifically for your business needs and goals.</li>
+                        <li><strong>Implementation Support:</strong> I provide ongoing guidance as you implement these strategies, helping you navigate challenges that arise.</li>
+                        <li><strong>Progress Evaluation:</strong> Regular check-ins to measure progress, make adjustments, and ensure you're on track to achieve your business objectives.</li>
+                    </ol>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>Areas of Expertise</h3>
+                    <ul>
+                        <li><strong>Business Strategy:</strong> Developing comprehensive plans for growth, market expansion, or pivoting in the U.S. market</li>
+                        <li><strong>Financial Analysis:</strong> Reviewing financial health and providing recommendations for improvement</li>
+                        <li><strong>Marketing & Sales:</strong> Creating effective marketing strategies and sales processes</li>
+                        <li><strong>Operations Optimization:</strong> Streamlining business processes for greater efficiency</li>
+                        <li><strong>Team Development:</strong> Building and managing effective teams</li>
+                        <li><strong>Business Timing:</strong> Integrating astrological insights to determine optimal timing for major business moves</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>Benefits of My Business Consultation Services</h3>
+                    <ul>
+                        <li>Gain clarity on complex business challenges specific to the American market</li>
+                        <li>Receive expert advice tailored to your unique business situation</li>
+                        <li>Develop actionable strategies with clear implementation steps</li>
+                        <li>Benefit from both traditional business expertise and astrological timing insights</li>
+                        <li>Access ongoing support as you implement recommended changes</li>
+                        <li>Make more confident business decisions with expert guidance</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>Who Can Benefit</h3>
+                    <p>My business consultation services are ideal for:</p>
+                    <ul>
+                        <li>Entrepreneurs launching new ventures in the United States</li>
+                        <li>Small business owners looking to grow or overcome challenges</li>
+                        <li>Established businesses seeking to optimize operations or expand</li>
+                        <li>Business owners facing specific challenges or difficult decisions</li>
+                        <li>Companies looking to incorporate astrological insights into their business planning</li>
+                    </ul>
+                </div>
+                
+                <a href="../index.html#services" class="back-to-services"><i class="fas fa-arrow-left"></i> Back to All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail-cta">
+        <div class="container">
+            <h3>Ready to Transform Your Business?</h3>
+            <p>Schedule a consultation today and take the first step toward achieving your business goals.</p>
+            <a href="../index.html#contact" class="btn">Contact Me Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Kheru De Fontes</h3>
+                    <p>Business Consultant & Astrologer</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#astrology">Business Astrology</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>My Services</h4>
+                    <ul>
+                        <li><a href="business-consultations.html">Business Consultations</a></li>
+                        <li><a href="business-trust-setup.html">Business Trust Setup</a></li>
+                        <li><a href="ein-setup.html">EIN Setup</a></li>
+                        <li><a href="dba-guidance.html">DBA Guidance</a></li>
+                        <li><a href="directional-guidance.html">Directional Guidance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Kheru De Fontes. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

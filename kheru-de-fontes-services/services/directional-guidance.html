@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directional Guidance | Kheru De Fontes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .service-detail {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .service-detail-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .service-detail-header h2 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-detail-header p {
+            color: white;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-detail-header h2:after {
+            background: white;
+            margin: 15px auto;
+        }
+        
+        .service-detail-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .service-detail-section {
+            margin-bottom: 40px;
+        }
+        
+        .service-illustration {
+            width: 100%;
+            max-width: 500px;
+            margin: 15px auto;
+            display: block;
+        }
+        
+        .directional-animation path,
+        .directional-animation rect,
+        .directional-animation circle,
+        .directional-animation polygon,
+        .directional-animation line {
+            transform-origin: center;
+        }
+        
+        .service-detail-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .service-detail-section ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .service-detail-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .service-detail-cta {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .service-detail-cta h3 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        
+        .back-to-services {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .back-to-services i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kheru De Fontes</h1>
+                <p>Business Consultant & Astrologer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#astrology">Business Astrology</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-detail-header">
+        <div class="container">
+            <h2>Directional Guidance</h2>
+            <p>Strategic direction and mentorship for business owners in the U.S. market</p>
+        </div>
+    </section>
+
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-illustration">
+                <svg class="directional-animation" width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background elements -->
+                    <rect width="500" height="300" fill="#f9f9f9" rx="10" ry="10" />
+                    
+                    <!-- Cosmic background with stars -->
+                    <g>
+                        <circle cx="100" cy="50" r="1" fill="white">
+                            <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite" begin="0s" />
+                        </circle>
+                        <circle cx="150" cy="30" r="1.5" fill="white">
+                            <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite" begin="1s" />
+                        </circle>
+                        <circle cx="400" cy="70" r="1" fill="white">
+                            <animate attributeName="opacity" values="0.2;1;0.2" dur="5s" repeatCount="indefinite" begin="2s" />
+                        </circle>
+                        <circle cx="350" cy="250" r="1.2" fill="white">
+                            <animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite" begin="0.5s" />
+                        </circle>
+                        <circle cx="80" cy="200" r="1" fill="white">
+                            <animate attributeName="opacity" values="0.2;1;0.2" dur="4.5s" repeatCount="indefinite" begin="1.5s" />
+                        </circle>
+                        <circle cx="420" cy="120" r="1.3" fill="white">
+                            <animate attributeName="opacity" values="0.2;1;0.2" dur="3.8s" repeatCount="indefinite" begin="2.5s" />
+                        </circle>
+                    </g>
+                    
+                    <!-- Compass rose -->
+                    <g>
+                        <!-- Outer circle -->
+                        <circle cx="250" cy="150" r="100" fill="none" stroke="#6a3093" stroke-width="2" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze" />
+                        </circle>
+                        
+                        <!-- Inner circle -->
+                        <circle cx="250" cy="150" r="70" fill="none" stroke="#a044ff" stroke-width="1.5" opacity="0">
+                            <animate attributeName="opacity" values="0;0.7" dur="1s" begin="0.8s" fill="freeze" />
+                        </circle>
+                        
+                        <!-- Center point -->
+                        <circle cx="250" cy="150" r="5" fill="#e9d362" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze" />
+                            <animate attributeName="r" values="0;5" dur="0.5s" begin="1s" fill="freeze" />
+                        </circle>
+                        
+                        <!-- Compass directions -->
+                        <!-- North -->
+                        <line x1="250" y1="150" x2="250" y2="50" stroke="#e9d362" stroke-width="2" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze" />
+                        </line>
+                        <text x="250" y="40" text-anchor="middle" fill="#e9d362" font-size="14" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.6s" fill="freeze" />
+                            N
+                        </text>
+                        
+                        <!-- East -->
+                        <line x1="250" y1="150" x2="350" y2="150" stroke="#e9d362" stroke-width="2" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.7s" fill="freeze" />
+                        </line>
+                        <text x="360" y="155" text-anchor="middle" fill="#e9d362" font-size="14" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.8s" fill="freeze" />
+                            E
+                        </text>
+                        
+                        <!-- South -->
+                        <line x1="250" y1="150" x2="250" y2="250" stroke="#e9d362" stroke-width="2" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.9s" fill="freeze" />
+                        </line>
+                        <text x="250" y="265" text-anchor="middle" fill="#e9d362" font-size="14" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2s" fill="freeze" />
+                            S
+                        </text>
+                        
+                        <!-- West -->
+                        <line x1="250" y1="150" x2="150" y2="150" stroke="#e9d362" stroke-width="2" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.1s" fill="freeze" />
+                        </line>
+                        <text x="140" y="155" text-anchor="middle" fill="#e9d362" font-size="14" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.2s" fill="freeze" />
+                            W
+                        </text>
+                    </g>
+                    
+                    <!-- Animated directional elements -->
+                    <g>
+                        <!-- Business path/journey -->
+                        <path d="M250 150 L300 120 L330 170 L290 210 L240 190" fill="none" stroke="#a044ff" stroke-width="3" stroke-dasharray="300" stroke-dashoffset="300" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.5s" fill="freeze" />
+                            <animate attributeName="stroke-dashoffset" values="300;0" dur="2s" begin="2.5s" fill="freeze" />
+                        </path>
+                        
+                        <!-- Path markers/milestones -->
+                        <circle cx="250" cy="150" r="6" fill="#6a3093" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.5s" fill="freeze" />
+                            <animate attributeName="r" values="0;6" dur="0.3s" begin="4.5s" fill="freeze" />
+                        </circle>
+                        
+                        <circle cx="300" cy="120" r="6" fill="#6a3093" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.7s" fill="freeze" />
+                            <animate attributeName="r" values="0;6" dur="0.3s" begin="4.7s" fill="freeze" />
+                        </circle>
+                        
+                        <circle cx="330" cy="170" r="6" fill="#6a3093" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.9s" fill="freeze" />
+                            <animate attributeName="r" values="0;6" dur="0.3s" begin="4.9s" fill="freeze" />
+                        </circle>
+                        
+                        <circle cx="290" cy="210" r="6" fill="#6a3093" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.1s" fill="freeze" />
+                            <animate attributeName="r" values="0;6" dur="0.3s" begin="5.1s" fill="freeze" />
+                        </circle>
+                        
+                        <circle cx="240" cy="190" r="6" fill="#6a3093" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.3s" fill="freeze" />
+                            <animate attributeName="r" values="0;6" dur="0.3s" begin="5.3s" fill="freeze" />
+                        </circle>
+                        
+                        <!-- Animated goal/destination star -->
+                        <polygon points="240,190 245,200 255,200 245,210 250,220 240,215 230,220 235,210 225,200 235,200" fill="#e9d362" opacity="0">
+                            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.5s" fill="freeze" />
+                            <animate attributeName="transform" values="scale(0);scale(1)" dur="0.5s" begin="5.5s" fill="freeze" />
+                            <animateTransform attributeName="transform" type="rotate" from="0 240 190" to="360 240 190" dur="10s" repeatCount="indefinite" begin="6s" />
+                        </polygon>
+                    </g>
+                </svg>
+            </div>
+            <div class="service-detail-content">
+                <div class="service-detail-section">
+                    <h3>What is Directional Guidance?</h3>
+                    <p>Directional Guidance is my comprehensive mentorship and strategic advisory service that combines traditional business expertise with astrological insights to help business owners navigate their entrepreneurial journey with clarity and confidence. Unlike standard business coaching, my approach integrates cosmic wisdom with practical business strategies to provide a truly holistic path forward for your business in the U.S. market.</p>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>My Unique Approach to Business Direction</h3>
+                    <p>What sets my Directional Guidance apart is the integration of three key elements:</p>
+                    <ol>
+                        <li><strong>Practical Business Expertise:</strong> Drawing on extensive experience in U.S. business operations, market analysis, and strategic planning to provide actionable advice</li>
+                        <li><strong>Astrological Insights:</strong> Utilizing cosmic patterns and energies to identify favorable timing for business moves and potential challenges to navigate</li>
+                        <li><strong>Personalized Mentorship:</strong> Offering ongoing support tailored to your specific business needs, goals, and personal strengths</li>
+                    </ol>
+                    <p>This three-dimensional approach creates a roadmap that aligns with both practical business realities and the natural rhythms of the universe, giving you an edge in today's competitive marketplace.</p>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>The Directional Guidance Process</h3>
+                    <ol>
+                        <li><strong>Discovery Session:</strong> We begin with an in-depth assessment of your business, personal goals, challenges, and vision for the future.</li>
+                        <li><strong>Astrological Analysis:</strong> I create a business astrology chart that identifies cosmic influences affecting your business journey and optimal timing for key decisions.</li>
+                        <li><strong>Strategic Roadmap Development:</strong> Together, we create a comprehensive plan that integrates practical business strategies with astrological insights.</li>
+                        <li><strong>Implementation Support:</strong> I provide ongoing guidance as you implement the roadmap, helping you navigate challenges and seize opportunities.</li>
+                        <li><strong>Regular Alignment Sessions:</strong> We meet periodically to assess progress, make adjustments, and ensure your business remains on its optimal path.</li>
+                        <li><strong>Cosmic Timing Alerts:</strong> I provide notifications about significant astrological events that may impact your business, allowing you to plan accordingly.</li>
+                    </ol>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>Areas of Directional Guidance</h3>
+                    <ul>
+                        <li><strong>Business Vision & Mission:</strong> Clarifying and refining your core purpose and long-term vision</li>
+                        <li><strong>Strategic Decision-Making:</strong> Guidance on major business decisions and timing</li>
+                        <li><strong>Growth Planning:</strong> Developing sustainable expansion strategies aligned with cosmic energies</li>
+                        <li><strong>Market Positioning:</strong> Finding your unique place in the U.S. market landscape</li>
+                        <li><strong>Business Model Evolution:</strong> Adapting your business model to changing market conditions</li>
+                        <li><strong>Team Building & Leadership:</strong> Developing your leadership style and building an effective team</li>
+                        <li><strong>Challenge Navigation:</strong> Overcoming obstacles with strategic approaches and optimal timing</li>
+                        <li><strong>Opportunity Recognition:</strong> Identifying and capitalizing on emerging opportunities</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>Benefits of Directional Guidance</h3>
+                    <ul>
+                        <li><strong>Clarity and Confidence:</strong> Gain clear direction and confidence in your business decisions</li>
+                        <li><strong>Strategic Advantage:</strong> Leverage astrological insights for optimal timing that competitors may not consider</li>
+                        <li><strong>Holistic Perspective:</strong> Address both practical business needs and cosmic influences</li>
+                        <li><strong>Personalized Support:</strong> Receive guidance tailored to your specific business and personal characteristics</li>
+                        <li><strong>Reduced Stress:</strong> Navigate business challenges with greater ease and foresight</li>
+                        <li><strong>Accelerated Growth:</strong> Identify and capitalize on the most favorable periods for expansion</li>
+                        <li><strong>Sustainable Success:</strong> Build a business that thrives in harmony with universal energies</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>Who Benefits Most from Directional Guidance</h3>
+                    <p>My Directional Guidance service is particularly valuable for:</p>
+                    <ul>
+                        <li>Entrepreneurs at critical decision points in their business journey</li>
+                        <li>Business owners feeling stuck or uncertain about their next steps</li>
+                        <li>Leaders navigating significant business transitions or challenges</li>
+                        <li>Visionaries seeking to align their business with deeper purpose and cosmic timing</li>
+                        <li>Established business owners looking for fresh perspectives and strategic advantages</li>
+                        <li>New entrepreneurs wanting to start with a clear roadmap for success in the U.S. market</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail-section">
+                    <h3>Directional Guidance Options</h3>
+                    <p>I offer several engagement options to meet different needs and budgets:</p>
+                    <ul>
+                        <li><strong>Single Strategy Session:</strong> A focused session addressing a specific business challenge or decision</li>
+                        <li><strong>Quarterly Guidance:</strong> Regular sessions to keep your business aligned with cosmic energies and strategic goals</li>
+                        <li><strong>Comprehensive Roadmap:</strong> A complete business direction plan with implementation support</li>
+                        <li><strong>VIP Mentorship:</strong> Ongoing, on-call guidance for business owners seeking comprehensive support</li>
+                    </ul>
+                    <p>Each option can be customized to address your specific business needs and goals.</p>
+                </div>
+                
+                <a href="../index.html#services" class="back-to-services"><i class="fas fa-arrow-left"></i> Back to All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail-cta">
+        <div class="container">
+            <h3>Ready for Clear Direction in Your Business?</h3>
+            <p>Contact me today to discuss how my Directional Guidance can help you navigate your business journey with confidence and cosmic alignment.</p>
+            <a href="../index.html#contact" class="btn">Contact Me Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Kheru De Fontes</h3>
+                    <p>Business Consultant & Astrologer</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#astrology">Business Astrology</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>My Services</h4>
+                    <ul>
+                        <li><a href="business-consultations.html">Business Consultations</a></li>
+                        <li><a href="business-trust-setup.html">Business Trust Setup</a></li>
+                        <li><a href="ein-setup.html">EIN Setup</a></li>
+                        <li><a href="dba-guidance.html">DBA Guidance</a></li>
+                        <li><a href="directional-guidance.html">Directional Guidance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Kheru De Fontes. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
